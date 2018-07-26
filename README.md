@@ -1,7 +1,12 @@
 # Triangle Project
+
+[![Build Status](https://travis-ci.org/irimia-dragos/triangleProject.png)](https://travis-ci.org/irimia-dragos/triangleProject)
+
 This is a sample project.
 
 Do not use in production.
+
+
 
 # Building
 
