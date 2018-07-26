@@ -75,43 +75,6 @@
             </archive>
           </configuration>
         </plugin>
-        <plugin>
-          <!-- Deploy the web site -->
-          <groupId>com.github.github</groupId>
-          <artifactId>site-maven-plugin</artifactId>
-          <version>0.9</version>
-          <executions>
-            <execution>
-              <goals>
-                <goal>site</goal>
-              </goals>
-              <!-- select the Maven phase in which the plugin will be executed -->
-              <phase>site-deploy</phase>
-              <configuration>
-                <!-- Plugin configuration ges here -->
-
-                <server>github</server>
-
-                <!-- The commit message -->
-                <message>Building site for my project</message>
-                <!-- The location where the site is uploaded -->
-                <path>${site.path}</path>
-                <!-- Use merge or override the content -->
-                <merge>true</merge>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.3</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>2.7</version>
-        </plugin>
       </plugins>
   </build>
 
