@@ -3,11 +3,11 @@ package com.github.irimiadragos.tests;
 /**
  * This is the triangle class.
  * It will map out any type of triangle.
- * The triangle will be build from it's sides values.
- * The triangle alwas has 3 sides. This class only takes integer as triangle sides values.
+ * The triangle will be build from it's sides values, thus the triangle always has 3 sides.
+ * This class only takes integer as triangle sides values.
  *
  * This triangle class will validate that the parameters can form indeed a triangle.
- * This triangle calss is immutable.
+ * This triangle class is immutable.
  */
 public final class Triangle {
 
