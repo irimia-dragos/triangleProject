@@ -12,20 +12,20 @@ Do not use in production.
 
 This project is build by maven.
 
-You should have maven installed.
+You must have maven installed in order to build this project.
 ```
 mvn clean install
 ```
-The generate jar is available in the target folder
+The generate jar will be available in the target folder
 
-In order to run the project one could use the follwing command
+In order to run the project one could use the follwing command:
 ```
 java -jar target/triangles-1.0-SNAPSHOT.jar
 ```
 
 # Configuration
 The application will get 3 parameters from the command line.
-These parameters must be positive integers. 
+These parameters must be positive integers.
 
 If the application will receive any other type, it will output an appropriate error.
  
