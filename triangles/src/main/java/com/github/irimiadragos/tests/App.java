@@ -1,6 +1,5 @@
 package com.github.irimiadragos.tests;
 
-import java.util.stream.Collectors;
 
 /**
  * Start up class for the Triangle test;

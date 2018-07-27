@@ -15,7 +15,7 @@ public final class Triangle {
     private int b;
     private int c;
 
-    public Triangle(int sides[]){
+    public Triangle(int... sides){
         initSides(sides);
     }
 
@@ -24,7 +24,7 @@ public final class Triangle {
      *
      * @param sides the triangle sides length
      */
-    private void initSides(int[] sides){
+    private void initSides(int... sides){
         if (sides.length < 3){
             throw new TriangleInitializationError("You didn't specify a triangle. Please provide 3 arguments. You are missing "  + (3 - sides.length) + " sides");
         } else if (sides.length > 3){

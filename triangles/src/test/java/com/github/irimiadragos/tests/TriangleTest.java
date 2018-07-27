@@ -11,21 +11,21 @@ public class TriangleTest
     @Test
     public void testEquilateral()
     {
-        Triangle t = new Triangle(new int[]{5, 5, 5});
+        Triangle t = new Triangle(5, 5, 5);
         assertEquals( TriangleType.EQUILATERAL, t.getType() );
     }
 
     @Test
     public void testIsoscele()
     {
-        Triangle t = new Triangle(new int[]{5, 5, 7});
+        Triangle t = new Triangle(5, 5, 7);
         assertEquals( TriangleType.ISOSCELES, t.getType() );
     }
 
     @Test
     public void testScalene()
     {
-        Triangle t = new Triangle(new int[]{3, 4, 5});
+        Triangle t = new Triangle(3, 4, 5);
         assertEquals( TriangleType.SCALENE, t.getType() );
     }
 
@@ -35,18 +35,18 @@ public class TriangleTest
     @Test(expected = TriangleInitializationError.class)
     public void testNotTriangle()
     {
-        Triangle t = new Triangle(new int[]{3, 9, 5});
+        Triangle t = new Triangle(3, 9, 5);
     }
 
     @Test(expected = TriangleInitializationError.class)
     public void testNegativeTriangle()
     {
-        Triangle t = new Triangle(new int[]{3, -4, 5});
+        Triangle t = new Triangle(3, -4, 5);
     }
 
     @Test(expected = TriangleInitializationError.class)
     public void testZeroEdgeCase()
     {
-        Triangle t = new Triangle(new int[]{3, 0, 3});
+        Triangle t = new Triangle(3, 0, 3);
     }
 }
