@@ -43,4 +43,10 @@ public class TriangleTest
     {
         Triangle t = new Triangle(new int[]{3, -4, 5});
     }
+
+    @Test(expected = TriangleInitializationError.class)
+    public void testZeroEdgeCase()
+    {
+        Triangle t = new Triangle(new int[]{3, 0, 3});
+    }
 }

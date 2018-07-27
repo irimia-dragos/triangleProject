@@ -30,6 +30,13 @@ public final class Triangle {
         } else if (sides.length > 3){
             throw new TriangleInitializationError("You didn't specify a triangle. Please provide only 3 arguments.");
         }
+        for (int size : sides){
+            if (size < 0 ){
+                throw new TriangleInitializationError("A size cannot be negative, you must change the value " + size);
+            } else if(size == 0){
+                throw new TriangleInitializationError("A size cannot zero");
+            }
+        }
         a = sides[0];
         b = sides[1];
         c = sides[2];
